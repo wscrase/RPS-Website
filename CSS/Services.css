@@ -1,0 +1,37 @@
+/* Servcice Page Styling */
+.main-news a {
+    all: unset;
+    display: block;  /* Ensure the <a> tag is block-level */
+    width: 100%;  /* Ensure it takes full width of card */
+    height: 100%; /* Ensure it takes full height of card */
+    text-decoration: none; /* Remove underline */
+}
+
+.news-img {
+    width: 300px;
+}
+
+.news-post {
+    text-align: center;
+    width: 80vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+.news-link {
+    text-decoration: underline;
+}
+
+/* Service Link Hover Effect */
+.news-link {
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+.news-link:hover {
+    background-color: #e0e0e0; /* Soft grey background on hover */
+    color: #007bff; /* Dark grey text color on hover */
+    border-radius: 5px; /* Optional: adds a slight rounding to the edges */
+    padding: 5px; /* Optional: subtle padding increase for a refined look */
+}
+
+

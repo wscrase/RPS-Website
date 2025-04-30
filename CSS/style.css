@@ -1,0 +1,543 @@
+/* Header Section */
+.top-top {
+    background-color: #f7f7f7;
+    padding: 20px 0;
+    border-bottom: 3px solid #363636; /* Decorative line for consistency */
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    max-height: 80px;
+}
+
+.header-contact {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.instagram-link {
+    height: 30px;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #363636;
+    padding: 15px 40px;
+    
+}
+
+.navbar-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    background-color: #363636;
+}
+
+.nav-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 10px 15px;
+}
+
+.nav-link:hover, .nav-link:active {
+    color: #ff0000; /* Example: Accent colour */
+}
+
+/* Hide the dropdown by default */
+.nav-item .dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-radius: 4px;
+    z-index: 1000;
+}
+
+/* Show the dropdown on hover */
+.nav-item:hover .dropdown-menu {
+    display: block;
+}
+
+/* Style the dropdown links */
+.dropdown-item {
+    padding: 10px 15px;
+    text-decoration: none;
+    color: black;
+    display: block;
+    white-space: nowrap;
+}
+
+.dropdown-item:hover {
+    background-color: #363636;
+    color: #ff0000;
+}
+
+/* Positioning the dropdown menu below the link */
+.nav-item {
+    position: relative;
+}
+
+.dropdown-menu {
+    top: 100%;
+    left: 0;
+}
+
+
+/* Carousel */
+.carousel-item {
+    height: 80vh; /* Adjust height for better alignment */
+}
+
+.carousel img {
+    object-fit: cover;
+    height: 100%;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .navbar-links {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+
+
+/* Mission Statement Section */
+.mission-statement {
+    background-color: #f7f7f7; /* Light grey background */
+    color: #333333; /* Slightly darker text for better contrast */
+    padding: 60px 20px;
+}
+
+/* Mission Statement Flexbox Layout */
+.mission-statement-container {
+    display: flex;
+    align-items: center; /* Vertically centers elements */
+    justify-content: center; /* Horizontally centers elements */
+    margin-bottom: 30px;
+    gap: 20px; /* Adds spacing between title and borders */
+}
+
+/* Decorative Borders */
+.mission-border-decor {
+    width: 12%; /* Slightly longer for visual balance */
+    height: 4px; /* Slightly thicker */
+    background-color: #272121; /* Example: Brand colour or accent */
+}
+
+/* Mission Title Styling */
+.section-title {
+    font-size: 3rem; /* Larger font size for emphasis */
+    font-weight: 900; /* Extra bold for prominence */
+    text-transform: uppercase; /* Consistent style */
+    letter-spacing: 2px; /* Slightly increased spacing for a premium feel */
+    margin: 0;
+    color: #272121; /* Matches the border colour for consistency */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Adds a subtle depth effect */
+}
+
+/* Mission Text */
+.mission-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    color: #555555; /* Slightly lighter grey for text contrast */
+}
+
+/* Center Button in the Section */
+.mission-statement .btn-primary {
+    display: inline-block; /* Ensures the button respects its container */
+    margin: 20px auto 0; /* Adds spacing and centers the button */
+    text-align: center; /* Centers text inside the button */
+    background-color: #272121; /* Matches the site's colour scheme */
+    border-color: #272121;
+    color: #ffffff; /* Ensures legible white text */
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Hover Effect for Button */
+.mission-statement .btn-primary:hover {
+    background-color: #444444; /* Slightly lighter grey for hover state */
+    border-color: #444444;
+    color: #ffffff; /* Retain white text on hover */
+}
+
+/* Center-align Button Container */
+.mission-statement .container {
+    text-align: center; /* Centers all content, including the button */
+}
+
+
+
+
+
+/* About Us Section */
+.about-us {
+    background-color: #f7f7f7; /* Light neutral background for a professional look */
+    color: #363636; /* Dark grey text for readability */
+    padding: 60px 20px;
+}
+
+/* About Us Flexbox Layout */
+.about-us-container {
+    display: flex;
+    align-items: center; /* Vertically center all elements */
+    justify-content: center; /* Horizontally center all elements */
+    gap: 15px; /* Space between the borders and the title */
+}
+
+/* Decorative Borders */
+.border-decor {
+    width: 10%;
+    height: 3px;
+    background-color: #363636;
+    display: inline-block; /* Ensure consistent block-level rendering */
+}
+
+/* Title Styling */
+.about-us-title {
+    font-size: 2.5rem; /* Large font size */
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin: 0; /* Remove any margin that could push it off-center */
+    color: #363636;
+    line-height: 1; /* Remove additional height added by font line height */
+    display: inline-block; /* Align with the borders */
+}
+
+
+
+/* About us Paragraph Styling */
+.about-us-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    color: #555555; /* Slightly lighter grey for text contrast */
+}
+
+/* Animation for About Us Section */
+.about-us-title, .about-us-text {
+    animation: fadeInUp 0.8s ease-in-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .about-us-title {
+        font-size: 2rem;
+    }
+
+    .about-us-container .border-decor {
+        width: 15%;
+    }
+}
+
+
+/* Breaker Divs */
+.breaker-div, .breaker-div-small {
+    height: 8vh;
+}
+
+/* What We Do Headings */
+.what-we-do h2, .what-we-do h3 {
+    text-align: center;
+}
+
+/* Footer Container */
+.footer {
+    background: #363636; /* Dark grey background */
+    color: #f7f7f7; /* Light text */
+    padding: 40px 20px;
+}
+
+/* Footer Typography */
+.footer h5 {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.footer p {
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+/* Footer Links */
+.footer-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.9rem;
+    margin: 0 5px;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-link:hover {
+    color: #ff0000; /* Highlight colour */
+}
+
+/* Social Media Icons */
+.footer-icon {
+    width: 25px;
+    margin: 0 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.footer-icon:hover {
+    transform: scale(1.2); /* Slight zoom effect */
+}
+
+
+/* What We Do Section */
+.what-we-do {
+    padding: 5rem 0;
+    background-color: #f7f7f7;
+}
+
+/* Section Title */
+.what-we-do h2 {
+    font-size: 2.5rem; /* Large title */
+    font-weight: bold;
+    color: #363636; /* Dark grey */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Ensure the container is centered */
+.what-we-do .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Allow cards to wrap */
+    width: 100%;
+}
+
+/* Row of Cards */
+.what-we-do .row {
+    display: flex;
+    flex-wrap: wrap; /* Allows responsive wrapping */
+    justify-content: center; /* Center cards within the row */
+    gap: 20px; /* Spacing between cards */
+    width: 100%;
+}
+
+/* Individual Card */
+.card-all {
+    background-color: #f0f0f0; /* The card's background */
+    border-radius: 15px; /* Rounded corners */
+    height: 500px; /* Fixed height */
+    perspective: 1000px; /* Enable 3D effect */
+    box-sizing: border-box; /* Prevent overflow due to padding or margin */
+    margin: 10px; /* Spacing around each card */
+    display: flex; /* Allows child content to align properly */
+    flex-direction: column; /* Ensure content stacks vertically */
+    justify-content: space-between; /* Spread child elements */
+    align-items: center; /* Center children horizontally */
+    position: relative; /* Ensure proper stacking of elements */
+    overflow: hidden; /* Prevent child content from spilling out */
+    box-shadow: none; /* No shadow by default */
+    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Add shadow on hover */
+.card-all:hover {
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
+    transform: translateY(-5px); /* Slight lift */
+}
+
+/* Card Content */
+.card-content {
+    position: relative;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    background-color: #f0f0f0; /* Matches parent card background */
+    color: #363636; /* Text color */
+    border-radius: 15px; /* Matches parent container */
+    padding: 10px; /* Space around the content */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distribute text properly */
+}
+
+/* Image Styling */
+.card-img {
+    width: 100%;
+    height: 200px; /* Fixed height */
+    object-fit: cover; /* Maintain aspect ratio */
+    border-top-left-radius: 15px; /* Matches card's rounded corners */
+    border-top-right-radius: 15px;
+    margin: 0; /* No extra space around image */
+}
+
+/* Text Styling */
+.card-title {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #363636; /* Title color */
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #666666; /* Subtle text color */
+    margin-bottom: 10px;
+}
+
+/* Responsive Design */
+/* Above 992px: 3 cards per row */
+@media (min-width: 992px) {
+    .card-all {
+        flex: 1 1 calc(33.333% - 20px); /* 3 cards per row */
+        max-width: 300px;
+    }
+}
+
+/* Between 768px and 992px: 2 cards per row */
+@media (max-width: 992px) and (min-width: 768px) {
+    .card-all {
+        flex: 1 1 calc(50% - 20px); /* 2 cards per row */
+        max-width: 300px;
+    }
+}
+
+/* Below 768px: 1 card per row */
+@media (max-width: 768px) {
+    .card-all {
+        flex: 1 1 100%; /* Full width for each card */
+        max-width: 100%;
+    }
+
+    .what-we-do h2 {
+        font-size: 2rem; /* Adjust section title for smaller screens */
+    }
+}
+
+
+
+
+
+
+
+
+
+.more-service-info {
+    text-align: center;
+    margin-top: 30px; /* Added some space above */
+}
+
+.more-service-info h4 {
+    margin-bottom: 25px;
+    font-size: 1.5rem; /* Increased font size */
+    color: #333;
+   
+}
+
+.more-service-info button {
+    padding: 15px 30px; /* Larger padding */
+    font-size: 1.25rem; /* Larger font size */
+    background-color: #363735; /* Matches your website color scheme */
+    color: white;
+    border: none;
+    border-radius: 8px; /* Slightly more rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.more-service-info button:hover {
+    background-color: #ff0000; /* A contrasting hover color */
+}
+
+
+
+
+
+
+/* Testimonials Section Styling */
+.testimonials {
+    background-color: #f9f9f9;
+    padding: 60px 0;
+}
+
+.testimonials h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.testimonials p {
+    font-size: 1.1rem;
+    color: #6c757d;
+}
+
+.testimonial-img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border: 3px solid #363636
+}
+
+.card {
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    color: #363636;
+    font-weight: 600;
+}
+
+.card-text {
+    font-size: 1rem;
+    font-style: italic;
+    color: #555555;
+}
+
+

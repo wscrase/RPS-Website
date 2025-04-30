@@ -1,0 +1,185 @@
+
+
+
+/* General Section Styling */
+.portfolio {
+    background-color: #ffffff;
+    padding: 5rem 0;
+}
+
+.portfolio h2.section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #272121;
+    margin-bottom: 1rem;
+}
+
+.portfolio p.section-subtitle {
+    font-size: 1.25rem;
+    color: #555555;
+    margin-bottom: 3rem;
+}
+
+/* Portfolio Card Styling */
+.card {
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.portfolio-img-wrapper {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden; /* Ensures no content spills outside the wrapper */
+    border-radius: 8px;
+}
+
+.portfolio-img-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    transform: scale(1);
+    border-radius: 8px;
+
+    /* Fix to prevent clicks from interfering with modal triggering */
+    pointer-events: none;
+}
+
+
+.portfolio-img {
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.portfolio-img-wrapper:hover .portfolio-img {
+    transform: scale(1.05);
+}
+
+.portfolio-img-wrapper:hover .portfolio-img-overlay {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+/* Carousel Styling */
+.carousel img {
+    border-radius: 10px;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #272121;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+/* Stretch the image to fill the modal */
+.carousel-inner .carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures image scales properly while filling the container */
+  }
+/* Modal Styling */
+.modal-content {
+    border-radius: 10px;
+    border: none;
+}
+
+.modal-header {
+    background-color: #363636;
+    color: white;
+    border-bottom: none;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.modal-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.modal-body {
+    padding: 2rem;
+}
+
+.modal .carousel img {
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    object-fit: cover;
+}
+
+.modal .carousel-control-prev-icon,
+.modal .carousel-control-next-icon {
+    background-color: #363636;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+/* Force modal stacking with z-index */
+.modal {
+    z-index: 1050 !important; /* Ensures modal sits on top */
+}
+
+.modal-backdrop {
+    z-index: 1040 !important; /* Ensures the backdrop is behind the modal */
+}
+
+/* Fix potential pointer issues */
+.modal,
+.modal-backdrop,
+.portfolio-img-wrapper {
+    pointer-events: auto;
+}
+
+/* Ensure modal isn't clipped */
+html,
+body {
+    overflow: visible !important;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .portfolio h2.section-title {
+        font-size: 2rem;
+    }
+
+    .portfolio p.section-subtitle {
+        font-size: 1rem;
+    }
+
+    .portfolio-card {
+        padding: 15px;
+    }
+
+    .portfolio-card h3 {
+        font-size: 1.25rem;
+    }
+
+    .portfolio-card p {
+        font-size: 0.9rem;
+    }
+}

@@ -1,0 +1,61 @@
+
+
+
+.service-img-container {
+    background-color: #f7f7f7;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.service-img-div {
+    width: 30vw;
+    height: 50vh;
+    padding: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.service-img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+  
+
+.service-img:hover {
+        transform: scale(1.05); /* Slight zoom */
+        opacity: 0.8; /* Dims the image */
+        cursor: pointer;
+}
+
+
+
+.service-img-div:hover::after {
+        opacity: 1; /* Icon appears on hover */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
